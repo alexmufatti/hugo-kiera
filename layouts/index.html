@@ -11,9 +11,7 @@
       {{ partial "aside" . }}
       {{ partial "featured_image" .}}
       <p>{{ .Summary }}</p>
-      {{ if .Truncated }}
       <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
-      {{ end }}
     </li>
     {{ end }}
   </ul>
