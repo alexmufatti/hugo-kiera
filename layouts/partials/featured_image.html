@@ -1,7 +1,7 @@
-{{if isset .Params "images" }}
+{{if isset .Params "cover" }}
 <div class="featured_image">
     <a href="{{ .Permalink }}" title="{{ .Title }}">
-        <img src="{{ index .Params.images 0 }}">
+        <img src="{{ .Params.cover }}">
     </a>
 </div>
 {{ end }}
