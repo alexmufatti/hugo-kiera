@@ -62,7 +62,7 @@ icon = "fab fa-xing"
 
 [[social_icons]]
 id = "stackoverflow"
-url = "https://stackoverflow.com/%s"
+url = "https://stackoverflow.com/users/%s"
 title = "StackOverflow"
 icon = "fab fa-stack-overflow"
 
