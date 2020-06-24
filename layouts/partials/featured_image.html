@@ -1,7 +1,11 @@
 {{if isset .Params "images" }}
 <div class="featured_image">
     <a href="{{ .Permalink }}" title="{{ .Title }}">
-        <img src="{{ index .Params.images 0 }}">
+        {{ with .Resources.Match (index .Params.images 0) }}
+            {{ range . }}
+                <img src="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
     </a>
 </div>
 {{ end }}
