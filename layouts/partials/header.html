@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang='{{ .Site.LanguageCode | default "en" }}'>
 
 <head>
   <title>{{ .Site.Title }}</title>
@@ -12,7 +12,7 @@
   <div id="container">
     <header>
       <h1>
-                <a href="{{ relLangURL "/" }}">{{ .Site.Title | markdownify }}</a><span class="dot-logo"></span>
+                <a href='{{ relLangURL "/" }}'>{{ .Site.Title | markdownify }}</a><span class="dot-logo"></span>
             </h1>
 
       <ul id="social-media">
