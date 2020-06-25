@@ -105,8 +105,9 @@ time {
     list-style: none;
 }
 
-#container main section#home h1 a {
+#container main section#home h2 a {
     color: #3399CC;
+    font-size: 2.3rem;
 }
 
 #container main section#home ul li {
@@ -115,7 +116,7 @@ time {
 }
 
 #container main section#home ul li h2 {
-    margin: 0.2em 0;
+    margin: 0.7em 0 0.2em 0;
 }
 
 #container main section#home span {
@@ -191,7 +192,7 @@ time {
     box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
-#container main h1 {
+#container main h2 {
     margin-bottom: 1rem;
     color: #3399CC;
 }
