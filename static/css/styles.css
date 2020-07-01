@@ -40,6 +40,7 @@ time {
 
 #container header {
     margin-bottom: 1em;
+    width: 800px;
 }
 
 #container header h1 {
@@ -63,6 +64,10 @@ time {
 }
 
 @media only screen and (max-width: 800px) {
+    #container header {
+        width: auto;
+    }
+
     #container header ul {
         float: none;
     }
@@ -75,6 +80,7 @@ time {
     border-bottom: solid 3px #3399cc;
     padding-bottom: 0.5em;
     font-family: "Ruda", sans-serif;
+    width: 800px;
 }
 
 #container nav ul {
@@ -93,10 +99,21 @@ time {
     border-bottom: 0.5em solid #3399CC;
 }
 
+@media only screen and (max-width: 800px) {
+    #container nav {
+        width: auto;
+    }
+}
+
 #container main {
     flex: 1 0 0;
     line-height: 1.5;
     font-size: 1.2rem;
+}
+
+#container main h2 {
+    margin-bottom: 1rem;
+    color: #3399CC;
 }
 
 #container main section#home ul {
@@ -190,11 +207,6 @@ time {
     border-image: none;
     border-radius: 3px;
     box-shadow: 0 -1px 0 #bbbbbb inset;
-}
-
-#container main h2 {
-    margin-bottom: 1rem;
-    color: #3399CC;
 }
 
 #container footer {
@@ -401,7 +413,7 @@ blockquote {
 
 blockquote::before {
     content: "\f10d";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", monospace;
     font-weight: 900;
     font-size: 3em;
     color: rgba(192, 192, 192, 0.3);

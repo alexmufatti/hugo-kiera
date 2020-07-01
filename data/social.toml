@@ -167,3 +167,9 @@ id = "strava"
 url = "https://www.strava.com/athletes/%s"
 title = "Strava"
 icon = "fab fa-strava"
+
+[[social_icons]]
+id = "keybase"
+url = "https://keybase.io/%s"
+title = "KeyBase"
+icon = "fab fa-keybase"
