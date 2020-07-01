@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Lato', sans-serif;
     color: #cecece;
     background: #2A2829;
 }
@@ -14,7 +14,7 @@ h4,
 h5,
 h6,
 time {
-    font-family: "Ruda", sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 #container {
@@ -79,7 +79,7 @@ time {
 #container nav {
     border-bottom: solid 3px #3399cc;
     padding-bottom: 0.5em;
-    font-family: "Ruda", sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     width: 800px;
 }
 
@@ -265,7 +265,7 @@ time {
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
     margin: 0.5em 0;
-    font-family: "Ruda", sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     color: #909090;
     font-size: 0.8em;
 }
