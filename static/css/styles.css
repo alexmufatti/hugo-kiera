@@ -47,7 +47,7 @@ time {
     font-size: 2.4rem;
 }
 
-#container header h1 a {
+#container header a {
     color: #cecece;
 }
 
@@ -95,6 +95,10 @@ time {
     margin-left: 1em;
 }
 
+#container nav a {
+    color: #cecece;
+}
+
 #container nav ul li a.active {
     border-bottom: 0.5em solid #3399CC;
 }
@@ -130,6 +134,10 @@ time {
 #container main section#home ul li {
     margin: 0.5em 0;
     padding-bottom: 0.5em;
+}
+
+#container main section#home > ul > li {
+    border-bottom: solid 3px #3399cc;
 }
 
 #container main section#home ul li h2 {
@@ -282,7 +290,7 @@ time {
 }
 
 a {
-    color: #cecece;
+    color: #3399cc;
     text-decoration: none;
 }
 
@@ -396,6 +404,7 @@ figure.float-right figcaption {
 table {
     width: 100%;
     border-bottom: solid 1px #cecece;
+    margin: 15px 0;
 }
 
 table thead {
@@ -459,4 +468,9 @@ figcaption h4 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 30px;
+}
+
+.read-more a {
+    font-weight: bold;
+    color: #cecece;
 }

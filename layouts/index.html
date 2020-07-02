@@ -11,7 +11,10 @@
       {{ partial "aside" . }}
       {{ partial "featured_image" .}}
       <p>{{ .Summary }}</p>
-      <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
+      <div class="read-more">
+          <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
+          <a class="fas fa-angle-double-right"></a>
+      </div>
     </li>
     {{ end }}
   </ul>

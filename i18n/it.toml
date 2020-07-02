@@ -6,7 +6,7 @@ one = "Lettura rapida"
 other = "Lettura da {{.Count}} minuti"
 
 [readMore]
-other = "Leggi di più…"
+other = "Leggi di più"
 
 [draft]
 other = "DRAFT"
