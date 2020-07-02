@@ -474,3 +474,8 @@ figcaption h4 {
     font-weight: bold;
     color: #cecece;
 }
+
+.activity-aside {
+    margin-right: 5px;
+    display: inline;
+}

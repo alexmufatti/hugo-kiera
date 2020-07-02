@@ -3,7 +3,7 @@
         <li>
             <time class="post-date" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}'>{{ .Date.Format "Jan 2, 2006" }}</time>
         </li>
-        {{ if and .Params.categories false }}
+        {{ if and .Params.categories }}
         <li>
             {{ T "categories" }}
             <em>
@@ -21,6 +21,29 @@
                 {{ range $i, $t := .Params.tags }}
                     {{ if $i }}, {{ end }}
                     <a href='{{ relLangURL ( printf "tags/%s" ( $t | urlize ) ) }}'>#{{ $t }}</a>
+                {{ end }}
+            </em>
+        </li>
+        {{ end }}
+
+        {{ if .Params.places }}
+        <li>
+            <em>
+                {{ range $i, $t := .Params.places }}
+                {{ if $i }}, {{ end }}
+                <a href='{{ relLangURL ( printf "tags/%s" ( $t | urlize ) ) }}'>^{{ $t }}</a>
+                {{ end }}
+            </em>
+        </li>
+        {{ end }}
+
+        {{ if .Params.activitydata }}
+        <li>
+            <em>
+                {{ range $i, $t := .Params.activitydata }}
+                <div class="activity-aside">
+                {{$i}}:{{ $t }}
+                </div>
                 {{ end }}
             </em>
         </li>
