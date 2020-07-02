@@ -2,7 +2,7 @@
 
 <section id="home">
   <ul>
-    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $pages := where site.RegularPages "Section" "in" site.Params.mainSections }}
     {{ $paginator := .Paginate $pages }}
     {{ range $index, $page := $paginator.Pages }}
 
