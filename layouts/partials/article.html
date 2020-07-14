@@ -1,6 +1,12 @@
 <article>
 
-    <h1>{{ .Title }}</h1>
+    <h1>
+        {{ if in .Params.tags "running" }}<i class="fas fa-running activity-title"></i>{{ end }}
+        {{ if in .Params.tags "cycling" }}<i class="fas fa-biking activity-title"></i>{{ end }}
+        {{ if in .Params.tags "swimming" }}<i class="fas fa-swimmer activity-title"></i>{{ end }}
+        {{ if in .Params.tags "hiking" }}<i class="fas fa-hiking activity-title"></i>{{ end }}
+        {{ .Title }}
+    </h1>
 
     {{ if or (not (isset .Params "meta")) (eq .Params.meta true) }}
       {{ partial "aside" . }}

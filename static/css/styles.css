@@ -479,3 +479,7 @@ figcaption h4 {
     margin-right: 5px;
     display: inline;
 }
+
+.activity-title {
+    margin-right: 10px;
+}
