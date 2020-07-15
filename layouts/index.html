@@ -15,13 +15,15 @@
 
         <a href="{{ $page.Permalink }}"title="{{ $page.Title }}">{{ .Title }}</a>
       </h2>
-      {{ partial "aside" . }}
+      {{ partial "aside-home" . }}
       {{ partial "featured_image" .}}
       <p>{{ .Summary }}</p>
+      {{ if .Truncated }}
       <div class="read-more">
           <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
           <a class="fas fa-angle-double-right"></a>
       </div>
+      {{ end }}
     </li>
     {{ end }}
   </ul>
