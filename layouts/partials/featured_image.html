@@ -3,7 +3,8 @@
     <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ with .Resources.Match (index .Params.images 0) }}
             {{ range . }}
-                <img src="{{ .RelPermalink }}">
+                {{ $image := .Resize "700x" }}
+                <img src="{{ $image.RelPermalink }}">
             {{ end }}
         {{ end }}
     </a>
