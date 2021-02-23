@@ -13,7 +13,7 @@
         {{ if in .Params.tags "swimming" }}<i class="fas fa-swimmer activity-title"></i>{{ end }}
         {{ if in .Params.tags "hiking" }}<i class="fas fa-hiking activity-title"></i>{{ end }}
 
-        <a href="{{ $page.Permalink }}"title="{{ $page.Title }}">{{ .Title }}</a>
+        <a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ .Title }}</a>
       </h2>
       {{ partial "aside-home" . }}
       {{ partial "featured_image" .}}
