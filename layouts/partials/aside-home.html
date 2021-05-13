@@ -37,6 +37,17 @@
         </li>
         {{ end }}
 
+        {{ if .Params.training_types }}
+        <li>
+            <em>
+                {{ range $i, $t := .Params.training_types }}
+                {{ if $i }}, {{ end }}
+                <a href='{{ relLangURL ( printf "training_types/%s" ( $t | urlize ) ) }}'>*{{ $t }}</a>
+                {{ end }}
+            </em>
+        </li>
+        {{ end }}
+
         <li>{{ T "readingTime" .ReadingTime }}</li>
     </ul>
 </aside>
