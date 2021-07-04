@@ -32,11 +32,11 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
 - Utilize normalize.css for consistent styling (Cloudflare CDN).
 - Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif).
 - [Disqus](https://disqus.com) or [Utterances](https://utteranc.es) comments loaded on demand.
-
+- Supports downloading extra [Google Fonts](https://fonts.google.com/).
 
 ## Demo
 
-Live demo: [https://themes.gohugo.io/theme/hugo-kiera/](https://themes.gohugo.io/theme/hugo-kiera/)
+Live demo: [https://themes.gohugo.io/themes/hugo-kiera/](https://themes.gohugo.io/themes/hugo-kiera/)
 
 ## Installation
 
@@ -100,10 +100,12 @@ googleAnalytics = "" #Google Analytics ID
     twitter = ""        #Twitter username
     instagram = ""      #Instagram username
     stackoverflow = ""  #StackOverflow username
+    devto = ""          #Dev.to username 
 
 [params]
     tagline = "the tagline for this website"
     customCSS = []  #Optional Customised CSS
+    disableDarkModeCSS = false # disables css style for users using dark-mode
 ```
 
 ### Main Menu
@@ -197,6 +199,10 @@ Set `Params.mathjax` to true to enable support of mathematics display using [Mat
 [Utterances](https://utteranc.es), a Git based comment system, is also available. Utterance comments are loaded and displayed by default.
 
 Comments can be disabled for a single page by setting `disableComments = true` in the page frontmatter.
+
+### Last Modified Date
+
+If the `lastmod` option is set on a page/post, either manually or because `enableGitInfo` is set to true, a line including the page's last modification will be shown after the post date.
 
 ## Support and Pull Requests
 
